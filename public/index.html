@@ -104,7 +104,7 @@
         if (optionChainData != null) {
           resolve(optionChainData);
         } else {
-          fetch('/chain')
+          fetch('/public/chain')
             .then(resp => {
               if (resp.status != 200) throw new Error('something went wrong');
               return resp.json();
